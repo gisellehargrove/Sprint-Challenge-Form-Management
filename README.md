@@ -45,9 +45,9 @@ Follow these steps to set up and work on your project:
 
 - [x] Implement the project on this Branch, **committing progress & changes often.**
 - [x] Push commits: `git push origin <firstName-lastName>`.
-- [ ] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
-- [ ] In the terminal, navigate back to the main folder, then into the `client` folder.
-- [ ] Create your React app here.
+- [x] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
+- [x] In the terminal, navigate back to the main folder, then into the `client` folder.
+- [x] Create your React app here.
 
 Follow these steps for completing your project:
 

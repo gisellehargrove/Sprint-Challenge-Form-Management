@@ -75,8 +75,11 @@ function FormComponent({ errors, touched, values, status }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    if(status) setData([...data, status])
-    console.log(data, 'status')
+    if(status) {
+      console.log(status, 'status')
+      setData([...data, status])
+      console.log(data, 'here is the data');
+    }
   }, [status])
 
   return (
@@ -100,7 +103,6 @@ function FormComponent({ errors, touched, values, status }) {
           </div>
         )}
       </div>
-
     </div>
   )
 };
