@@ -75,15 +75,16 @@ function FormComponent({ errors, touched, values, status }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    if(!status) setData([...data, status])
+    if(status) setData([...data, status])
+    console.log(data, 'status')
   }, [status])
 
   return (
     <div>
       <Form>
         <div>
-          {touched.name && errors.name && <p>errors.name</p>}
-          <Field type="text" name="name" placeholder="Username" />
+          {touched.username && errors.username && <p>errors.username</p>}
+          <Field type="text" name="username" placeholder="Username" />
         </div>
         <div>
           {touched.password && errors.password && <p>errors.password</p>}
@@ -91,19 +92,28 @@ function FormComponent({ errors, touched, values, status }) {
         </div>
         <button type="submit">Log In</button>
       </Form>
+
+      <div>
+        {data.map((course, key) =>
+          <div key={key}>
+            {course.name} : {course.technique}
+          </div>
+        )}
+      </div>
+
     </div>
   )
 };
 
 const FormikLoginForm = withFormik({
-  mapPropsToValues({name, password}) {
+  mapPropsToValues({username, password}) {
     return {
-      name: name || '',
+      username: username || '',
       password: password || ''
     };
   },
   validationSchema: Yup.object().shape({
-    name: Yup.string()
+    username: Yup.string()
       .required('Username is Required'),
     password: Yup.string()
       .min(4, 'Password must be at least 4 characters')
@@ -113,8 +123,15 @@ const FormikLoginForm = withFormik({
     axios.post('http://localhost:5000/api/register', values)
       .then(response => {
         console.log(response);
-        setStatus(response.data);
         resetForm();
+        return response.data;
+      })
+      .then(res => {
+        axios.get('http://localhost:5000/api/restricted/data')
+          .then(response => {
+            console.log(response.data, 'response')
+            setStatus(response.data);
+          })
       })
       .catch(error => {
         console.log(error);
