@@ -9,9 +9,11 @@ class FormComponent extends React.Component {
     return (
       <Form>
       <div>
+        {this.props.errors.username && <p>this.props.errors.username</p>}
         <Field type="text" name="username" placeholder="Username" />
       </div>
       <div>
+        {this.props.errors.password && <p>this.props.errors.password</p>}
         <Field type="password" name="password" placeholder="Password" />
       </div>
       <button type="submit">Log In</button>
