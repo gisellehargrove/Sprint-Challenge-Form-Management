@@ -38,22 +38,22 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [x] Implement the project on this Branch, **committing progress & changes often.**
+- [x] Push commits: `git push origin <firstName-lastName>`.
 - [ ] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
 - [ ] In the terminal, navigate back to the main folder, then into the `client` folder.
 - [ ] Create your React app here.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request.
+- [x] PM then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
