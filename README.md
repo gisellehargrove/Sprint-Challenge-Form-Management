@@ -59,11 +59,11 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] A registration form built with formik - include inputs for a `username` and a `password`
-- [ ] Form validation using Yup
-- [ ] At least one class component (I would challenge you to make the form a class!)
+- [x] A registration form built with formik - include inputs for a `username` and a `password`
+- [x] Form validation using Yup
+- [x] At least one class component (I would challenge you to make the form a class!)
 - [ ] Tests for at least one element, one event, and one unit test for a function
-- [ ] A POST request made from the registration form to `http://localhost:6000/api/register` to add a user - the request body should have the following shape:
+- [x] A POST request made from the registration form to `http://localhost:6000/api/register` to add a user - the request body should have the following shape:
 
 ```js
 {
